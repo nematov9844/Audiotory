@@ -3,10 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Box, Card, CardContent, CardMedia, Typography, IconButton } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
-
 const SliderCard = ({ items }) => {
   const [swiperRef, setSwiperRef] = React.useState(null);
-
   return (
     <Box sx={{ width: '100%', maxWidth: '1440px', margin: '0 auto', marginTop: '20px', height: '400px', position: 'relative' }}>
       <Swiper
@@ -42,15 +40,11 @@ const SliderCard = ({ items }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Prev tugmasi */}
       <div className="swiper-button-prev swiper-button-custom" style={{ position: 'absolute', top: '50%', left: '10px', transform: 'translateY(-50%)' }}>
         <IconButton onClick={() => swiperRef?.slidePrev()}>
           <ArrowBackIos />
         </IconButton>
       </div>
-
-      {/* Next tugmasi */}
       <div className="swiper-button-next swiper-button-custom" style={{ position: 'absolute', top: '50%', right: '10px', transform: 'translateY(-50%)' }}>
         <IconButton onClick={() => swiperRef?.slideNext()}>
           <ArrowForwardIos />

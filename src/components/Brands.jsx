@@ -16,12 +16,12 @@ export default function Brands() {
                 margin: "50px auto",
                 display: "grid",
                 gridTemplateColumns: {
-                    xs: "1fr 1fr", // kichik ekranlar uchun 2 ustun
-                    sm: "1fr 1fr 1fr", // o'rta ekranlar uchun 3 ustun
-                    md: "1fr 1fr 1fr 1fr", // kattaroq ekranlar uchun 4 ustun
-                    lg: "1fr 1fr 1fr 1fr 1fr" // juda katta ekranlar uchun 5 ustun
+                    xs: "1fr 1fr",
+                    sm: "1fr 1fr 1fr",
+                    md: "1fr 1fr 1fr 1fr", 
+                    lg: "1fr 1fr 1fr 1fr 1fr" 
                 },
-                gap: "30px", // elementlar orasidagi masofa
+                gap: "30px", 
                 alignItems: "center",
                 justifyContent: "center"
             }}
@@ -34,13 +34,13 @@ export default function Brands() {
                         justifyContent: "center",
                         alignItems: "center",
                         width: "100%",
-                        height: "100px", // rasmlar balandligi
+                        height: "100px",
                         borderRadius: "12px",
                         backgroundColor: "transparent",
                         boxShadow: "0 0px 6px rgba(255, 255, 255, 0.7)",
                         transition: "transform 0.3s ease",
                         "&:hover": {
-                            transform: "scale(1.05)", // hover qilinganda kattalashadi
+                            transform: "scale(1.05)", 
                         },
                     }}
                 >
@@ -49,8 +49,8 @@ export default function Brands() {
                         src={image}
                         alt={`Brand ${index}`}
                         sx={{
-                            maxHeight: "60px", // rasm balandligi
-                            maxWidth: "80%", // rasm eni
+                            maxHeight: "60px",
+                            maxWidth: "80%", 
                             objectFit: "contain",
                         }}
                     />
